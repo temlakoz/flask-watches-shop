@@ -1,41 +1,239 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-    <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="shop, ecommerce, store, multipurpose, shopify, woocommerce, html5, css3, sass">
+
+    <!-- fav -->
+  
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- title -->
+    <title>Moly - Multipurpose ecommerce html5 template</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="static/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/vendor/animate.css">
+    <link rel="stylesheet" href="static/css/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/css/vendor/slick.css">
+    <link rel="stylesheet" href="static/css/vendor/magnific-popup.css">
+    <link rel="stylesheet" href="static/css/vendor/normalize.css">
+    <link rel="stylesheet" href="static/css/mean-menu.css">
+    <link rel="stylesheet" href="static/css/default.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
 </head>
 
-<body class="container py-3">
+<body>
+
+    <!-- =============Preloader Starts=============-->
+    <div class="loader">
+        <div class="loding-cricle"></div>
+    </div>
+    <!-- =============Preloader Ends=============-->
+
+    
+    <!-- =================Header Area Starts================= -->
+
     <header>
-            {% block header %}
-        <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
-            <span class="fs-4">Pricing example</span>
-          </a>
+        <div class="header-area header-resposive pt-30">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-4 order-md-1 col-md-5 col-sm-12 ">
+                                <ul class="user-info d-flex pt-15 justify-content-center justify-content-md-start">
+                                    <li><a href="login-page.html">My Account</a></li>
+                                    <li><a href="cart-page.html">Wish List</a></li>
+                                    <li><a href="checkout-page.html">Checkout</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-7 col-lg-4 order-md-2 col-md-3  col-sm-6 col-6 ">
+                                <div class="logo text-left text-md-center pt-10 pt-md-0">
+                                    <a href="index.html"><img src="static/img/logo/logo.png" alt="moly-logo"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu mt-15 pt-25 pb-20">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-10 col-md-10">
+                            <div class="main-menu ">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li><a href="index.html">Home</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="index.html">Home style 1</a></li>
+                                                <li><a href="index-2.html">Home style 2</a></li>
+                                                <li><a href="index-3.html">Home style 3</a></li>
+                                                <li><a href="index-4.html">Home style 4</a></li>
+                                                <li><a href="index-5.html">Home style 5</a></li>
+                                                <li><a href="index-6.html">Home style 6</a></li>
+                                                <li><a href="index-7.html">Home style 7</a></li>
+                                                <li><a href="index-8.html">Home style 8</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="blog-page.html">Features</a>
+                                            <div class="badge">New</div>
+                                        </li>
+                                        <li><a href="blog-page.html">Fashion</a></li>
+                                        <li><a href="#">Page</a>
+                                            <div class="badge">Sale</div>
+                                            <ul class="sub-menu">
+                                                <li><a href="login-page.html">Login</a></li>
+                                                <li><a href="register-page.html">Register</a></li>
+                                                <li><a href="cart-page.html">Cart</a></li>
+                                                <li><a href="checkout-page.html">Checkout</a></li>
+                                                <li><a href="about-page.html">About Us</a></li>
+                                                <li><a href="404-page.html">404-page</a></li>
 
-          <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-            <a class="me-3 py-2 text-dark text-decoration-none" href="#">Features</a>
-            <a class="me-3 py-2 text-dark text-decoration-none" href="#">Enterprise</a>
-            <a class="me-3 py-2 text-dark text-decoration-none" href="#">Support</a>
-            <a class="me-3 py-2 text-dark text-decoration-none" href="/posts">Статьи</a>
-            <a class="btn btn-warning" href="/create_article">Создать статью</a>
+                                            </ul>
+                                        </li>
 
-          </nav>
+                                        <li><a href="shop-grid-page.html">Shop</a>
+                                        </li>
+
+                                        <li><a href="blog-page.html">Blog</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="blog-page-2.html">Blog</a></li>
+                                                <li><a href="blog-detalis-page.html">Blog Detalis</a></li>
+                                                <li><a href="blog-left-sidebar-page.html">Blog Left Sidebar</a></li>
+                                                <li><a href="blog-right-sidebar-page.html">Blog Right Sidebar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact-page.html">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                               
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-md-2">
+                            <div class="site-info d-flex justify-content-end">
+                                <div class="search position-relative mr-15 ">
+                                    <a href="#"><img src="static/img/icon/search.png" alt=""></a>
+                                    <div class="search-form">
+                                        <form action="#">
+                                            <input type="text" placeholder="Enter your keywords.....">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="react position-relative mr-15">
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <div class="badge">0</div>
+                                </div>
+                                <div  class="cart position-relative mr-10">
+                                    <a href="#" id="mini-cart" class="mini-cart-hide"><img src="static/img/icon/bag.png" alt=""></a>
+                                    <!-- <button id="mini-cart"><img src="static/img/icon/bag.png" alt=""></button> -->
+                                    <div class="badge">0</div>
+
+                                    <div id="cart-show"  class="product-area product-shop-page mini-cart-product-page " >
+                                        <div class="hot-sale-product-area "  >
+                                            <div class="hot-lookbook pt-10 pb-30">
+                                                <div class="product-wrapper d-flex">
+                                                    <div class="product-img pr-15">
+                                                        <img src="static/img/product/product-23.png" alt="product">
+                                                        <div class="cart-icon">
+                                                            <img src="static/img/icon/cart-white.png" alt="cart">
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-detalis">
+                                                        <span>Men Dress</span>
+                                                        <h6><a href="shop-detalis-page.html">Military Patch Pocket Blazer</a></h6>
+                                                        <div class="price d-flex">
+                                                            <span>$999</span>
+                                                            <del>$899</del>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-wrapper mt-10 d-flex">
+                                                    <div class="product-img pr-15">
+                                                        <img src="static/img/product/product-27.png" alt="product">
+                                                        <div class="cart-icon">
+                                                            <img src="static/img/icon/cart-white.png" alt="cart">
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-detalis ">
+                                                        <span>Men Dress</span>
+                                                        <h6><a href="shop-detalis-page.html">Military Patch Pocket Blazer</a></h6>
+                                                        <div class="price d-flex">
+                                                            <span>$999</span>
+                                                            <del>$899</del>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-price-area text-right pt-15 pr-20">
+                                                    <p>Sub total: <span class="d-inline-block pl-30"> $999.00</span></p>
+                                                    <p>Total:  <span class="d-inline-block pl-30"> $999.00</span></p>
+                                                </div>
+                                                <div class="table-button mini-cart-btn text-center pt-5">
+                                                    <a class="b-btn pt-15 pb-15 pr-20 pl-20" href="#">View Cart</a>
+                                                    <a class="b-btn pt-15 pb-15 pr-20 pl-20" href="#">Checkout</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="mobile-menu"></div>
+                </div>
+            </div>
+            
+
         </div>
-
-
-
-        {% endblock %}
     </header>
 
-    {% block body %}
+    <!-- =================Header Area Ends================= -->
 
-    {% endblock %}
+    <!-- =================Subscribe Area Starts================= -->
+    <div class="subscribe-area pt-50 pb-35">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-8 col-md-10 col-sm-12 col-12 offset-xl-3 offset-lg-2 offset-md-1">
+                    <div class="mess-icon text-center pb-30">
+                        <img src="static/img/icon/email-red.png" alt="messages">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-8 col-md-10 col-sm-12 col-12 offset-xl-3 offset-lg-2 offset-md-1">
+                    <form action="#">
+                        <input type="email" placeholder="Enter Your Email...">
+                        <button>Subscribe</button>
+                    </form>
+                    <div class="discount-text text-center pt-45">
+                        <p>Get Discount 30% Off !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ================= Subscribe Area Starts ================= -->
+
+    <!-- scripts -->
+    <script src="static/js/vendor/jquery.min.js"></script>
+    <script src="static/js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="static/js/vendor/bootstrap.min.js"></script>
+    <script src="static/js/vendor/popper.min.js"></script>
+    <script src="static/js/vendor/jquery-mean-menu.min.js"></script>
+    <script src="static/js/vendor/owl.carousel.min.js"></script>
+    <script src="static/js/vendor/isotope.pkgd.min.js"></script>
+    <script src="static/js/countdown.js"></script>
+    <script src="static/js/vendor/jquery.nice-number.js"></script>  
+    <script src="static/js/vendor/slick.min.js"></script>
+    <script src="static/js/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="static/js/vendor/wow-1.3.0.min.js"></script>  
+    <script src="static/js/main.js"></script>
+
 </body>
+
 </html>
